@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+  xmlns:jaxws="http://cxf.apache.org/jaxws"
+  xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxrs
+http://cxf.apache.org/schemas/jaxrs.xsd
+http://cxf.apache.org/jaxws
+http://cxf.apache.org/schemas/jaxws.xsd">
+
+  <import resource="classpath:META-INF/cxf/cxf.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
+  <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+  <!-- JAX-RS -->
+  <jaxrs:server id="anunciosService" address="/anuncios">
+    <jaxrs:serviceBeans>
+      <ref bean="anunciosServiceImpl" />
+    </jaxrs:serviceBeans>
+  </jaxrs:server>
+
+  <bean id="anunciosServiceImpl" class="com.jmj.servicios.access.AnunciosService" />
+  
+  
+  <jaxrs:server id="userService" address="/users">
+    <jaxrs:serviceBeans>
+      <ref bean="userServiceImpl" />
+    </jaxrs:serviceBeans>
+  </jaxrs:server>
+
+  <bean id="userServiceImpl" class="com.jmj.servicios.user.UserService" />
+  
+  
+</beans>

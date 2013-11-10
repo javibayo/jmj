@@ -1,0 +1,336 @@
+
+.page_content{
+	background: #000000; 
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTQ4NGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d));
+	background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -o-linear-gradient(top,  #000000 0%,#45484d 100%); 
+	background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: linear-gradient(to bottom,  #000000 0%,#45484d 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 );
+/*background: #8fbfd6; 
+background: -moz-linear-gradient(top,  #8fbfd6 0%, #ddf1f9 65%, #feffff 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fbfd6), color-stop(65%,#ddf1f9), color-stop(100%,#feffff)); 
+background: -webkit-linear-gradient(top,  #8fbfd6 0%,#ddf1f9 65%,#feffff 100%); 
+background: -o-linear-gradient(top,  #8fbfd6 0%,#ddf1f9 65%,#feffff 100%);
+background: -ms-linear-gradient(top,  #8fbfd6 0%,#ddf1f9 65%,#feffff 100%); 
+background: linear-gradient(to bottom,  #8fbfd6 0%,#ddf1f9 65%,#feffff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fbfd6', endColorstr='#feffff',GradientType=0 ); 
+*/
+
+
+}
+
+.body_content{
+	margin: 0 auto;
+	width: 932px;
+	height: 775px;
+	font-family: 'Brawler', serif;
+	overflow: hidden;
+
+}
+
+.wrapper_cab{
+	height: 10%;
+}
+
+.wrapper_content{
+	height: 80%;
+}
+
+.wrapper_footer{
+	height: 10%;
+	width: 100%
+	margin: 0 auto;
+	text-align: center;
+	font-size: 8pt;
+	color: black;
+}
+
+/*Footer Section*/
+
+
+
+/*Cab section*/
+.logo{
+	background-color: black;
+	width: 30%;
+	float: left;
+	height: 100%;
+}
+
+.logo_container img{
+	width: 382px;
+	height: 83px;
+}
+
+.wrapper_menu{
+	
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+
+.menu_container{
+	margin: 0;
+	padding-top: 45px;
+	padding-left: 52px;
+}
+
+.menu_container ul li{
+	position: relative;
+	display: inline;
+	float: left;
+	font-size: 10pt;
+	
+}
+
+/*principal section*/
+.menu_content{
+	display:none;
+	height: 0%;
+}
+
+.menu_showed{
+	display:block;
+	height: 100%;
+}
+
+.menu_container ul li a{
+	text-decoration:none;
+	/*font-weight:bold;*/
+	display:block;
+	color:#FFFFFF;
+	border-right: 1px solid white;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+.first{
+	border-left: 1px solid white;
+}
+/*Init section*/
+.ic_myCarousel{
+ margin: 0 auto;
+ top: 30px;
+ height: 100%;
+ width: 100%;
+
+}
+
+.inicio_content
+{
+		background: #000000; 
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTQ4NGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d));
+	background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: -o-linear-gradient(top,  #000000 0%,#45484d 100%); 
+	background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%);
+	background: linear-gradient(to bottom,  #000000 0%,#45484d 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 );
+}
+
+
+
+/*Content section*/
+
+.main_content{
+	margin: 0 auto;
+	height: 98%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+/*Contact Section*/
+.contact_section{
+	height: 100%;
+}
+
+.image_contact{
+	background-color: black;
+	width: 65%;
+	float: left;
+	height: 100%;
+}
+
+.wrapper_contact{
+	width: 35%;
+	height: 100%;
+	float: left;
+	padding-top:60px; 
+}
+
+.contact_content{
+	padding-left:20px; 
+}
+
+.contact_label{
+	display: block;
+}
+
+/* Bodas - Fotoestudio - Comuniones section*/
+
+.bodas_section{
+	height: 100%;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.fotoestudio_section{
+	height: 100%;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.comuniones_section{
+	height: 100%;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+article.columnaComUno
+{
+	width:250px;
+	height:600px;
+	padding: .1em;
+	border: none;
+	float: left;
+	
+}
+article.columnaComDos
+{
+	width:320px;
+	height:600px;
+	padding: .1em;
+	border: none;
+	float: left;
+	
+}
+article.columnaComTres
+{
+	width:335px;
+	height:600px;
+	padding: .1em;
+	border: none;
+	float: left;
+	
+}
+article.fila1
+{
+	width:930px;
+	height:280px;
+	padding: .1em;
+	border: none;
+	
+}
+
+article.fila1 img
+{
+	max-width: 460px;
+	width:50%;
+	height:100%;
+	padding: .1em;
+	border: none;
+	display: block;
+	float: left;
+	
+}
+
+
+article.columnaComUno img
+{
+	width:100%;
+	height:50%;
+	padding: .1em;
+	border: none;
+	display: block;
+	
+}
+
+article.columnaComDos img
+{
+	width:100%;
+	height:32%;
+	padding: .1em;
+	border: none;
+	display: block;
+	
+}
+article.columnaComTres img
+{
+	width:100%;
+	height:25%;
+	padding: .1em;
+	border: none;
+	display: block;
+	
+}
+
+#verticalCom2
+{
+	width:100%;
+	height:72%;
+	padding: .1em;
+	border: none;
+}
+
+article
+{
+	width:300px;
+	height:700px;
+	padding: .1em;
+	border: none;
+	float: left;
+	
+}
+
+article.columnaUno img
+{
+	width:100%;
+	height:25%;
+	padding: .1em;
+	border: none;
+	display: block;
+	
+}
+
+article.columnaDos img
+{
+	width:100%;
+	height:25%;
+	padding: .1em;
+	border: none;
+	display: block;
+	/*float: left;*/
+	
+}
+article.columnaTres img
+{
+	width:100%;
+	height:25%;
+	padding: .1em;
+	border: none;
+	display: block;
+	/*float: left;*/
+	
+}
+#vertical
+{
+	width:100%;
+	height:50%;
+}
+
+/*Donde estamos*/
+.wrapperMapa{
+	padding-top: 125px;
+	padding-left: 120px;
+}
+#verticalDatos
+{
+	width:60%;
+	height:100%;
+}
