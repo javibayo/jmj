@@ -15,14 +15,14 @@ http://cxf.apache.org/schemas/jaxws.xsd">
   <import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
   <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 
-  <!-- JAX-RS -->
-  <jaxrs:server id="anunciosService" address="/anuncios">
+  
+  <jaxrs:server id="noticiasService" address="/noticias">
     <jaxrs:serviceBeans>
-      <ref bean="anunciosServiceImpl" />
+      <ref bean="noticiasServiceImpl" />
     </jaxrs:serviceBeans>
   </jaxrs:server>
 
-  <bean id="anunciosServiceImpl" class="com.jmj.servicios.access.AnunciosService" />
+  <bean id="noticiasServiceImpl" class="com.jmj.servicios.noticias.NoticiasService" />
   
   
   <jaxrs:server id="userService" address="/users">
@@ -33,5 +33,12 @@ http://cxf.apache.org/schemas/jaxws.xsd">
 
   <bean id="userServiceImpl" class="com.jmj.servicios.user.UserService" />
   
+  <jaxrs:server id="perrosService" address="/perros">
+    <jaxrs:serviceBeans>
+      <ref bean="perrosServiceImpl" />
+    </jaxrs:serviceBeans>
+  </jaxrs:server>
+
+  <bean id="perrosServiceImpl" class="com.jmj.servicios.perros.PerrosService" />
   
 </beans>
