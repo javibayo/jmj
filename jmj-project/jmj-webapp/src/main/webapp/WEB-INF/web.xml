@@ -14,14 +14,6 @@
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
     </listener>
-	 <servlet>
-        <servlet-name>Home</servlet-name>
-        <servlet-class>com.jmj.servlets.indexServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Home</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>CXFServlet</servlet-name>
         <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>

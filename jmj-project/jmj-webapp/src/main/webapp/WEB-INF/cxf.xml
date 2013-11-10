@@ -41,4 +41,5 @@ http://cxf.apache.org/schemas/jaxws.xsd">
 
   <bean id="perrosServiceImpl" class="com.jmj.servicios.perros.PerrosService" />
   
+  
 </beans>

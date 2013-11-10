@@ -50,11 +50,11 @@ public class UserService {
 		 logger.debug("con password de  root");
 		 logger.debug("con password de  root");
 		 
+	  		 	
+//		 	boolean anuncios=dbAnuncio.getUsuario(a);
 
-		   AccesoBBDD dbAnuncio = new AccesoBBDDImpl();
-		   Gson gson = new Gson();
-		 	boolean anuncios=dbAnuncio.getUsuario(a);
-			String json="";
+		   String json="{devolviendo user "+a+"}";
+			
 			ResponseBuilder builder = new ResponseBuilderImpl();
 		       builder.type(MediaType.APPLICATION_JSON);
 		       builder.entity(json);
