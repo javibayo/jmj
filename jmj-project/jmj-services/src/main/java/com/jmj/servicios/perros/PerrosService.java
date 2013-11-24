@@ -15,8 +15,7 @@ import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 import com.jmj.beans.AnuncioO;
-import com.jmj.servicios.bbdd.AccesoBBDD;
-import com.jmj.servicios.bbdd.AccesoBBDDImpl;
+import com.jmj.bbdd.AccesoBBDD;
 
 
 @Path("/perro/{a}")

@@ -17,5 +17,6 @@
 			<artifactId>jmj-beans-web</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
+		
 	</dependencies>
 </project>

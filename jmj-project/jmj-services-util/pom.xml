@@ -17,5 +17,10 @@
 			<artifactId>jmj-utilidades-web</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.jmj.web</groupId>
+			<artifactId>jmj-constants</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
 	</dependencies>
 </project>

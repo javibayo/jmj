@@ -12,6 +12,7 @@
 	<module>jmj-utilidades-web</module>
 	<module>jmj-beans-web</module>
 	<module>jmj-services</module>
+	<module>jmj-constants</module>
   </modules>
   <properties>
   
