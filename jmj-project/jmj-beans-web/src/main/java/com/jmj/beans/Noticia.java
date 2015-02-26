@@ -1,5 +1,10 @@
 package com.jmj.beans;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+import com.google.gson.Gson;
+
+@XmlRootElement
 public class Noticia {
 	private String codNoticia;
 	private String titulo;
@@ -88,4 +93,40 @@ public class Noticia {
 	public String getAudTimfmod() {
 		return aud_timfmod;
 	}
+	@Override
+	public String toString() {
+		return "Noticia [codNoticia=" + codNoticia + ", titulo=" + titulo
+				+ ", resumen=" + resumen + ", descripcion=" + descripcion
+				+ ", lugar=" + lugar + ", usTexto=" + usTexto + ", categoria="
+				+ categoria + ", subcat=" + subcat + ", subsubcat=" + subsubcat
+				+ ", estado=" + estado + ", usuario=" + usuario
+				+ ", aud_timfmod=" + aud_timfmod + "]";
+	}
+	
+	public static void main (String[] args){
+		
+		Noticia news=new Noticia();
+		
+		news.setCodNoticia("codigo noticia");
+		news.setTitulo("titulo");
+		news.setResumen("resumen");
+		news.setDescripcion("descripcion");
+		news.setLugar("lugar");
+		news.setUsTexto("usTexto");
+		news.setCategoria("categoria");
+		news.setSubcat("subcat");
+		news.setSubsubcat("Subsubcat");
+		news.setEstado("estado");
+		news.setUsuario("usuario");
+		news.setAudTimfmod("aud_timfmod");
+		
+		Gson gson = new Gson();
+		System.out.println(gson.toJson(news));
+		
+		
+		
+		
+		
+	}
+	
 }
